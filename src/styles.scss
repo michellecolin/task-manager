@@ -7,3 +7,9 @@
 body {
   background-color: $background_color;
 }
+
+.dropdown-item {
+  &:active {
+    background-color: #999eab;
+  }
+}
