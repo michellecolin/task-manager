@@ -1,0 +1,32 @@
+@import '../../assets/sass/variables';
+
+.nav {
+  background: $background_color;
+  color: $primary_color;
+  box-shadow: 0px 3px 6px #0000001A;
+  padding: 0.5em;
+
+  &-item {
+    a {
+      color: $primary_color;
+      font-size: 1.5em;
+      &:hover {
+        color: $primary_color;
+      }
+    }
+    i {
+      font-size: 2em;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    a {
+      white-space: nowrap;
+    }
+    img {
+      display: none;
+    }
+  }
+}

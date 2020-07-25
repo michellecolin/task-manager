@@ -2,3 +2,8 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 // regular style toast 
 @import '~ngx-toastr/toastr';
+@import 'src/assets/sass/variables';
+
+body {
+  background-color: $background_color;
+}
