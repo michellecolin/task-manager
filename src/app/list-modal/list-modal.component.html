@@ -1,0 +1,28 @@
+<div class="modal" role="dialog" *ngIf="show">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Criar Nova Lista de Tarefas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nome</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Descrição</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()">Cancelar</button>
+        <button type="button" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>

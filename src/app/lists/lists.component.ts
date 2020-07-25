@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
+import { ListModalComponent } from '../list-modal/list-modal.component';
 
 @Component({
   selector: 'app-lists',
@@ -6,6 +7,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./lists.component.scss']
 })
 export class ListsComponent implements OnInit {
+  @ViewChild(ListModalComponent) creatModal;
   public innerWidth;
 
   constructor() {
@@ -15,6 +17,9 @@ export class ListsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showModal() {
+    this.creatModal.show = true;
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize() {

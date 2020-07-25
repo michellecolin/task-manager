@@ -1,4 +1,13 @@
 <div class="container mt-4">
+  <div class="row align-items-center">
+    <div class="col-md-6 col-12 text-left" [ngClass]="{'text-center': innerWidth < 500}">
+      <h1>Lista de Tarefas</h1>
+    </div>
+    <div class="col-md-6 col-12 text-right" [ngClass]="{'mt-4': innerWidth < 500}">
+      <button type="button" class="btn btn-primary" (click)="showModal()">Criar Lista de Tarefas</button>
+    </div>
+  </div>
+
   <div class="row list">
     <div class="col-10 col-md-11 list__title">
       <div class="side-icon"><i class="fas fa-list"></i></div>
@@ -37,3 +46,5 @@
     </div>
   </div>
 </div>
+
+<app-list-modal></app-list-modal>
